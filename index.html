@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="images/ufaz.png">
+    <title>UFAZ | Internship Offer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ebbcb35ff7.js" crossorigin="anonymous"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <!-- Js libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+    <!-- Bootstrap tooltips -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/plugin.css">
+    <link rel="stylesheet" href="css/style.css">
+		
+    <link rel="stylesheet" href="https://unpkg.com/bs-stepper/dist/css/bs-stepper.min.css">
+    <script src="https://unpkg.com/bs-stepper/dist/js/bs-stepper.min.js"></script>
+</head>
+<body>
+    <header id="mainHeader">
+      <div>
+        <a href="https://www.ufaz.az/" target="_blank"><img src="images/ufaz-erased.png" id="ufaz-logo" alt="ufaz-logo"></a>
+        <h1>INTERNSHIP Offer</h1>
+        <a href="https://www.unistra.fr" target="_blank"><img src="images/unistra.png" id="unistra-logo" alt="unistra-logo"></a>
+      </div>
+    </header>
+    <!-- Form Begins -->
+    <div id="mainForm">
+      <form action="action.php" method="post" id="Internship-Form">
+        <h1 id="form-header">FORM<i class="fas fa-file-alt"></i></h1>
+            <!-- One "tab" for each step in the form: -->
+            <div class="tab">
+            <div class="md-form" id="first-input">
+                <i class="fas fa-briefcase prefix"></i>
+                <input type="text" id="Company-Name" class="form-control" name="Company-Name" required>
+                <label for="Company-Name">Company Name</label>
+                </div>
+                <fieldset>
+                <legend>Contact Details</legend>
+                <div class="md-form">
+                    <i class="fas fa-map-marker-alt prefix"></i>
+                    <input type="text" id="Address" class="form-control" name="Address" required>
+                    <label for="Address">Address</label>
+                </div>
+                <div class="md-form">
+                    <i class="fas fa-phone prefix"></i>
+                    <input type="text" id="Phone" class="form-control" name="Phone" required>
+                    <label for="Phone">Phone Number</label>
+                </div>
+                <div class="md-form">
+                    <i class="fab fa-internet-explorer prefix"></i>
+                    <input type="text" id="Website" class="form-control" name="Website">
+                    <label for="Website">Web Site</label>
+                </div>
+                </fieldset>
+                <fieldset>
+                <legend>Company Profile</legend>
+                <div class="fieldset-radio">
+                    <div class="form-check">
+                    <input type="radio" class="form-check-input" id="Public" name="Public-Or-Private" value="Public">
+                    <label class="form-check-label" for="Public">Public</label>
+                    </div>
+                    <span>/</span>
+                    <div class="form-check">
+                    <input type="radio" class="form-check-input" id="Private" name="Public-Or-Private" value="Private">
+                    <label class="form-check-label" for="Private">Private</label>
+                    </div>
+                    <h1>|</h1>
+                    <div class="form-check">
+                    <input type="radio" class="form-check-input" id="Local" name="Local-Or-International" value="Local">
+                    <label class="form-check-label" for="Local">Local</label>
+                    </div>
+                    <span>/</span>
+                    <div class="form-check">
+                    <input type="radio" class="form-check-input" id="International" name="Local-Or-International" value="International">
+                    <label class="form-check-label" for="International">International</label>
+                    </div>
+                    <h1>|</h1>
+                    <div class="form-check">
+                    <input type="radio" class="form-check-input" id="Small" name="Company-Size" value="Small">
+                    <label class="form-check-label" for="Small">Small</label>
+                    </div>
+                    <span>/</span>
+                    <div class="form-check">
+                    <input type="radio" class="form-check-input" id="Medium" name="Company-Size" value="Medium">
+                    <label class="form-check-label" for="Medium">Medium</label>
+                    </div>
+                    <span>/</span>
+                    <div class="form-check">
+                    <input type="radio" class="form-check-input" id="Large" name="Company-Size" value="Large">
+                    <label class="form-check-label" for="Large">Large</label>
+                    </div>
+                </div>
+                </fieldset>
+                <div class="md-form">
+                <i class="fas fa-briefcase prefix"></i>
+                <input type="text" id="Main-Field" class="form-control" name="Main-Field" required>
+                <label for="Main-Field">Main Field of Activity</label>
+                </div>
+            </div>
+            <div class="tab">
+                <fieldset>
+                    <legend>Contact Person in the Company</legend>
+                    <div class="md-form">
+                      <i class="fas fa-user prefix"></i>
+                      <input type="text" id="Person-Name" class="form-control" name="Person-Name" required>
+                      <label for="Person-Name">Name</label>
+                    </div>
+                    <div class="md-form">
+                      <i class="fas fa-users prefix" style="margin-left: -4px;"></i>
+                      <input type="text" id="Person-Surname" class="form-control" name="Person-Surname" required>
+                      <label for="Person-Surname">Surname</label>
+                    </div>
+                    <div class="md-form">
+                      <i class="fab fa-black-tie prefix"></i>
+                      <input type="text" id="Position" class="form-control" name="Position">
+                      <label for="Position">Position</label>
+                    </div>
+                    <div class="md-form">
+                      <i class="fa fa-at prefix"></i>
+                      <input type="email" id="Person-Email" class="form-control validate" name="Person-Email" required>
+                      <label for="Person-Email"  data-error="Wrong">Email</label>
+                    </div>
+                  </fieldset>
+                  <div class="md-form md-outline">
+                    <textarea id="Internship-Topic" name="Internship-Topic" class="form-control md-textarea" rows="3" aria-describedby="Topic-Description"></textarea>
+                    <label for="Internship-Topic">Suggested Project / Topic of the Internship</label>
+                    <small id="Topic-Description" class="form-text text-muted">Brief description of tasks to be performed so that the students have enough information to choose your internship</small>
+                  </div>
+                  <div class="md-form">
+                    <i class="fa fa-user-plus prefix"></i>
+                    <input type="number" id="Number-of-Trainees" name="Number-of-Trainees" class="form-control" aria-describedby="Number-Description">
+                    <label for="Number-of-Trainees">Possible Number of Trainees</label>
+                    <small id="Number-Description" class="form-text text-muted">If large project</small>
+                  </div>
+            </div>
+            <div class="tab">
+                <div id="specialties">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="Computer-Science" name="Specialties" value="Computer-Science">
+                      <label class="form-check-label" for="Computer-Science">Computer Science</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="Chemical-Engineering" name="Specialties" value="Chemical-Engineering">
+                      <label class="form-check-label" for="Chemical-Engineering">Chemical Engineering</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="Geophysics-Engineering" name="Specialties" value="Geophysics-Engineering">
+                      <label class="form-check-label" for="Geophysics-Engineering">Geophysics Engineering</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="OilGas-Engineering" name="Specialties" value="OilGas-Engineering">
+                      <label class="form-check-label" for="OilGas-Engineering">Oil & Gas Engineering</label>
+                    </div>
+								</div>
+                  <fieldset>
+                    <legend>Internship Dates</legend>
+                    <div class="md-form">
+                      <input placeholder="not Selected" type="text" id="Date-From" class="form-control datepicker" name="Date-From">
+                      <label for="Date-From">from</label>
+                    </div>
+                    <div class="md-form">
+                      <input placeholder="not Selected" type="text" id="Date-Till" class="form-control datepicker" name="Date-Till">
+                      <label for="Date-Till">till</label>
+                    </div>
+                    <div class="md-form">
+                      <i class="fas fa-hourglass-half prefix"></i>
+                      <input type="number" id="Duration" name="Date-Duration" class="form-control">
+                      <label for="Duration">Duration(in weeks)</label>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Will Internship be Paid?</legend>
+                    <div class="fieldset-single">
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="Paid" name="Paid-Or-Not" value="Paid">
+                        <label class="form-check-label" for="Paid">Paid</label>
+                      </div>
+                      <span>/</span>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="Not-Paid" name="Paid-Or-Not" value="Not-Paid" aria-describedby="Paid-Info">
+                        <label class="form-check-label" for="Not-Paid">Not Paid</label>
+                      </div>
+                    </div>
+                    <div id="How-Much" class="md-form" style="display: none;">
+                      <i class="far fa-money-bill-alt prefix"></i>
+                      <input type="number" id="Paid-Qnt" name="If-Paid-How-Much" class="form-control">
+                      <label for="Paid-Qnt">How Much?(for month)</label>
+                    </div>
+                    <small id="Paid-Info" class="form-text text-muted float-left">Paid internships will attract good students</small>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Will the Company Provide Insurance to the Trainee(s)?</legend>
+                    <div class="fieldset-single">
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="Insurance-Yes" name="Insurance" value="Yes">
+                        <label class="form-check-label" for="Insurance-Yes">Yes</label>
+                      </div>
+                      <span>/</span>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="Insurance-No" name="Insurance" value="No">
+                        <label class="form-check-label" for="Insurance-No">No</label>
+                      </div>
+                    </div>
+                  </fieldset>
+            </div>
+            <div class="tab">
+                <fieldset>
+                    <legend id="Selection-Legend" aria-describedby="Selection-Info">Main Selection Criteria for the Company </legend>
+                    <small id="Selection-Info" class="form-text text-muted">ex: language skills, academic results, motivation letter, etc.)</small>
+                    <div class="Criterias Add-Here">
+                      <div class="md-form">
+                        <input type="text" id="Criteria-1" class="form-control" name="Criteria-1">
+                        <label for="Criteria-1">Criteria 1</label>
+                      </div>
+                    </div>
+                    <a class="btn-floating btn-primary Add-Criteria float-right"><i class="fas fa-plus"></i></a>
+                  </fieldset>
+          
+                  <fieldset>
+                    <legend id="Support-Legend" aria-describedby="Support-Info">Would the company like UFAZ support in selection process? </legend>
+                    <div class="fieldset-single">
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="Support-Yes" name="Support" value="Yes">
+                        <label class="form-check-label" for="Support-Yes">Yes</label>
+                      </div>
+                      <span>/</span>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="Support-No" name="Support" value="No">
+                        <label class="form-check-label" for="Support-No">No</label>
+                      </div>
+                    </div>
+                    <div id="What-Support" style="display: none;">
+                      <div class="Supports Add-Here-Support">
+                        <div class="md-form">
+                          <input type="text" id="Support-1" class="form-control" name="Support-1">
+                          <label for="Support-1">Support 1</label>
+                        </div>
+                      </div>
+                      <a class="btn-floating btn-primary Add-Support float-right"><i class="fas fa-plus"></i></a>
+                    </div>
+                    <small id="Support-Info" class="form-text text-muted float-left">ex: CV screening, interviews</small>
+                  </fieldset>
+                  <div class="md-form">
+                    <i class="far fa-file-alt prefix"></i>
+                    <input type="number" id="Max-CV" name="Max-CV" class="form-control" aria-describedby="Max-CV-Info">
+                    <label for="Max-CV">Maximum Number of CVs</label>
+                    <small id="Max-CV-Info" class="form-text text-muted">that can be sent by UFAZ to the company for the pre-selection</small>
+                  </div>
+                  <div class="md-form md-outline">
+                    <textarea id="Other-Comments" name="Other-Comments" class="form-control md-textarea" rows="3" aria-describedby="Comments-Description"></textarea>
+                    <label for="Other-Comments">Suggested Project / Topic of the Internship</label>
+                    <small id="Comments-Description" class="form-text text-muted">ex. any specific procedures to be done before being accepted to the internship?</small>
+                  </div>
+								</div>
+						<div style="overflow:auto;">
+								<div>
+								<button type="submit" id="submit" class="btn btn-primary btn-md col-md-2 float-right"><i class="fa fa-plus-circle" aria-hidden="true"></i> Submit</button>
+                <button type="button" class="btn btn-primary btn-md col-md-2 float-right" id="nextBtn" onclick="nextPrev(1)">Next <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                <button type="button" class="btn btn-md col-md-2 float-right" id="prevBtn" onclick="nextPrev(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previous</button>
+              </div>
+            </div>
+            <!-- Circles which indicates the steps of the form: -->
+            <div style="text-align:center;margin-top:40px;">
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+            </div>
+      </form>
+    </div>
+    <!-- Form Ends -->
+    <!-- News Starts -->
+    <aside class="sidebar" id="mainAside">
+      <p id="newsHeader"><i class="fa fa-newspaper-o" aria-hidden="true"></i> NEWS</p>
+    <div class="news-container">
+        <div class="news">
+          <a href="https://www.ufaz.az/en/news/baker-hughes-company-representatives-delivered-a-lecture-to-ufaz-petroleum-students/">
+            <img src="images/news1.jpg" class="news-image" alt="ufaz-news1">
+          </a>
+          <div class="news-inner">
+            <p class="news-date">2019-12-04</p>
+            <a href="https://www.ufaz.az/en/news/baker-hughes-company-representatives-delivered-a-lecture-to-ufaz-petroleum-students/">
+              <p class="news-title">Baker Hughes Company delivered a lecture to UFAZ</p>
+            </a>
+          </div>
+        </div>
+        <div class="news">
+          <a href="https://www.ufaz.az/en/news/ufaz-represented-at-international-education-fair-in-ashgabat/">
+            <img src="images/news2.jpg" class="news-image" alt="ufaz-news2">
+          </a>
+          <div class="news-inner">
+            <p class="news-date">2019-11-20</p>
+            <a href="https://www.ufaz.az/en/news/ufaz-represented-at-international-education-fair-in-ashgabat/">
+              <p class="news-title">UFAZ represented at the International Education Fair</p>
+            </a>
+          </div>
+        </div>
+        <div class="news">
+          <a href="https://www.ufaz.az/en/news/ufaz-participated-in-spe-annual-caspian-technical-conference-2019/">
+            <img src="images/news4.jpg" class="news-image" alt="ufaz-news3">
+          </a>
+          <div class="news-inner">
+            <p class="news-date">2019-11-08</p>
+            <a href="https://www.ufaz.az/en/news/ufaz-participated-in-spe-annual-caspian-technical-conference-2019/">
+              <p class="news-title">UFAZ in SPE Annual Caspian Technical Conference 2019</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- News Ends -->
+    <!-- Footer Starts -->
+    <footer id="mainFooter">
+      <h4>Please send us back the form by e-mail to:</h4>
+      <p>Latifa Nasibova, Head of Educational Department</p>
+      <a href="mailto:Latifa.nasibova@ufaz.az">Latifa.nasibova@ufaz.az</a><br>
+      <a href="tel:+(994)12-599-00-74">+(994)12-599-00-74</a>
+    </footer>
+    <!-- Footer Ends -->
+		<script src="js/bootstrap.js"></script>
+    <script src="js/jquery.inputmask.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/test.js"></script> -->
+</body>
+</html>
